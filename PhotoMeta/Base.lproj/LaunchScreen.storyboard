@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PhotoMeta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2CG-7c-zD0">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="45"/>
+                                <color key="textColor" red="0.023529411764705882" green="0.098039215686274508" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="85" y="246" width="244" height="63"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="art_logo_rgb.png" translatesAutoresizingMaskIntoConstraints="NO" id="zrm-AG-aHn">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="5Cv-6U-VhL">
+                                        <variation key="widthClass=compact" constant="307"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="51" id="yHI-IO-pWG">
+                                        <variation key="widthClass=compact" constant="61"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5Cv-6U-VhL"/>
+                                        <exclude reference="yHI-IO-pWG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="5Cv-6U-VhL"/>
+                                        <include reference="yHI-IO-pWG"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zrm-AG-aHn" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="NrX-Gl-fre"/>
+                            <constraint firstItem="2CG-7c-zD0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Qpi-86-ydT"/>
+                            <constraint firstItem="2CG-7c-zD0" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-82.5" id="SRC-cs-o5U">
+                                <variation key="widthClass=compact" constant="-90.5"/>
+                            </constraint>
+                            <constraint firstItem="zrm-AG-aHn" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Y5k-7f-Vr0">
+                                <variation key="widthClass=compact" constant="-0.5"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2CG-7c-zD0"/>
+                                <exclude reference="zrm-AG-aHn"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Qpi-86-ydT"/>
+                                <exclude reference="SRC-cs-o5U"/>
+                                <exclude reference="NrX-Gl-fre"/>
+                                <exclude reference="Y5k-7f-Vr0"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2CG-7c-zD0"/>
+                                <include reference="zrm-AG-aHn"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Qpi-86-ydT"/>
+                                <include reference="SRC-cs-o5U"/>
+                                <include reference="NrX-Gl-fre"/>
+                                <include reference="Y5k-7f-Vr0"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1369.5" y="1148"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="art_logo_rgb.png" width="806" height="165"/>
+    </resources>
+</document>
